@@ -4,7 +4,7 @@
 - a [PostgreSQL](https://www.postgresql.org/) database
 - a backend REST service powered by a python [Flask](http://flask.pocoo.org/) app ([SQLAlchemy](http://flask-sqlalchemy.pocoo.org/), [Restless](https://flask-restless.readthedocs.io/)) and exposed using [Gunicorn](http://gunicorn.org/)
 - a frontend volume for an [Angular](https://angular.io/) build
-- and a [NGINX](https://nginx.org/) web server
+- a [NGINX](https://nginx.org/) web server
 
 ## Requirements
 This stack requires [docker-compose](https://docs.docker.com/compose/) 1.13 or higher.
