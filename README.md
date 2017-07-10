@@ -7,7 +7,7 @@
 - a [NGINX](https://nginx.org/) web server
 
 ## Requirements
-This stack is design to be used on Linux. It requires [docker-compose](https://docs.docker.com/compose/) 1.13 or higher.
+This stack is designed to be used on Linux. It requires [docker-compose](https://docs.docker.com/compose/) 1.13 or higher.
 
 ## Usage
 - download this repository
