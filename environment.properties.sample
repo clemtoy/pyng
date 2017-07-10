@@ -1,6 +1,0 @@
-TEST_MODE=true
-DB_URI=postgresql://hola_user:hola_password@db/hola_db
-POSTGRES_DB=hola_db
-POSTGRES_USER=hola_user
-POSTGRES_PASSWORD=hola_password
-PGDATA=/var/lib/postgresql/data

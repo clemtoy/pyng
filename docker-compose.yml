@@ -4,21 +4,22 @@ services:
 
   db:
     build: ./db
-    env_file:
-      - environment.properties
+    environment:
+      - POSTGRES_DB=$DB_NAME
+      - POSTGRES_USER=$DB_USER
+      - POSTGRES_PASSWORD=$DB_PASSWORD
+      - PGDATA=/var/lib/postgresql/data
     volumes:
-      - ./db/data:/var/lib/postgresql/data
+      - $DB_PATH:/var/lib/postgresql/data
     healthcheck:
-      test: pg_isready --username=$$POSTGRES_USER --dbname=$$POSTGRES_DB
+      test: pg_isready --username=$DB_USER --dbname=$DB_NAME
       interval: 5s
-      timeout: 5s
-      retries: 15
       
   backend:
     restart: always
     build: ./backend
     env_file:
-      - environment.properties
+      - .env
     command: /usr/local/bin/gunicorn -c gunicorn.cfg api:app
     depends_on:
       db:
