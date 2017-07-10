@@ -6,9 +6,6 @@
 - a frontend volume for an [Angular](https://angular.io/) build
 - a [NGINX](https://nginx.org/) web server
 
-## Requirements
-This stack is design to be used on Linux. It requires [docker-compose](https://docs.docker.com/compose/) 1.13 or higher.
-
 ## Usage
 - download this repository
 - set the config in [`.env`](https://github.com/clemtoy/hola-stack/blob/master/.env)
