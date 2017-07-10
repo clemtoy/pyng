@@ -9,7 +9,7 @@
 ## Usage
 - download this repository
 - set the config in [`.env`](https://github.com/clemtoy/hola-stack/blob/master/.env)
-- configure your model in [`backend/api.py`](https://github.com/clemtoy/hola-stack/blob/master/backend/api.py)
+- configure your [`backend/api.py`](https://github.com/clemtoy/hola-stack/blob/master/backend/api.py)
 - in your Angular app, use the prefix `'/api/[...]'` to call the backend
 - build your Angular app and copy the `dist/` content to [`frontend/`](https://github.com/clemtoy/hola-stack/tree/master/frontend)  
 - run [`./reset.sh`](https://github.com/clemtoy/hola-stack/blob/master/reset.sh)
